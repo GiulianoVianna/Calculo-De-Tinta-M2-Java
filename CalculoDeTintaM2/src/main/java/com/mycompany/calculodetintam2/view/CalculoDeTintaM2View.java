@@ -17,6 +17,7 @@ public class CalculoDeTintaM2View extends javax.swing.JFrame {
      */
     public CalculoDeTintaM2View() {
         
+        // Thema
         FlatDarkLaf.setup();
         
         initComponents();
@@ -24,7 +25,7 @@ public class CalculoDeTintaM2View extends javax.swing.JFrame {
         // Centraliza a janela
         setLocationRelativeTo(null);
 
-        //colocar icone na janela
+        // Icone na janela
         setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("/icones/pincel.png"))); 
 
     }
