@@ -1,7 +1,9 @@
 
 package com.mycompany.calculodetintam2.view;
 
+import java.awt.Toolkit;
 import javax.swing.JOptionPane;
+import com.formdev.flatlaf.FlatDarkLaf;
 
 /**
  *
@@ -14,14 +16,16 @@ public class CalculoDeTintaM2View extends javax.swing.JFrame {
      * Creates new form CalculoDeTintaM2View
      */
     public CalculoDeTintaM2View() {
+        
+        FlatDarkLaf.setup();
+        
         initComponents();
 
         // Centraliza a janela
         setLocationRelativeTo(null);
 
         //colocar icone na janela
-        //setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("/imagens/icone.png"))); 
-
+        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("/icones/pincel.png"))); 
 
     }
 
@@ -50,12 +54,16 @@ public class CalculoDeTintaM2View extends javax.swing.JFrame {
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setResizable(false);
 
+        cbxDemao.setForeground(new java.awt.Color(255, 255, 255));
         cbxDemao.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Quantidade Demão", "1 Demão", "2 Demão", "3 Demão" }));
 
+        txtLargura.setForeground(new java.awt.Color(255, 255, 255));
         txtLargura.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
+        jLabel1.setForeground(new java.awt.Color(102, 0, 255));
         jLabel1.setText("Largura:");
 
+        txtAltura.setForeground(new java.awt.Color(255, 255, 255));
         txtAltura.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtAltura.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -63,18 +71,24 @@ public class CalculoDeTintaM2View extends javax.swing.JFrame {
             }
         });
 
+        jLabel2.setForeground(new java.awt.Color(102, 0, 255));
         jLabel2.setText("Altura:");
 
         txtTotalM2.setEditable(false);
+        txtTotalM2.setForeground(new java.awt.Color(255, 255, 255));
         txtTotalM2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
+        jLabel3.setForeground(new java.awt.Color(102, 0, 255));
         jLabel3.setText("Total:");
 
         txtLitrosDeTinta.setEditable(false);
+        txtLitrosDeTinta.setForeground(new java.awt.Color(255, 255, 255));
         txtLitrosDeTinta.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
+        jLabel4.setForeground(new java.awt.Color(102, 0, 255));
         jLabel4.setText("L de Tinta:");
 
+        btnCalcular.setForeground(new java.awt.Color(255, 255, 255));
         btnCalcular.setText("Calcular");
         btnCalcular.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -82,6 +96,7 @@ public class CalculoDeTintaM2View extends javax.swing.JFrame {
             }
         });
 
+        btnLimpar.setForeground(new java.awt.Color(255, 255, 255));
         btnLimpar.setText("Limpar");
         btnLimpar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -89,12 +104,16 @@ public class CalculoDeTintaM2View extends javax.swing.JFrame {
             }
         });
 
+        jLabel5.setForeground(new java.awt.Color(102, 0, 255));
         jLabel5.setText("M");
 
+        jLabel6.setForeground(new java.awt.Color(102, 0, 255));
         jLabel6.setText("M");
 
+        jLabel7.setForeground(new java.awt.Color(102, 0, 255));
         jLabel7.setText("M²");
 
+        jLabel8.setForeground(new java.awt.Color(102, 0, 255));
         jLabel8.setText("L");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
